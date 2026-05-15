@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { increaseQty, decreaseQty } from "../redux/slices/cartSlice";
 import "../App.css";
 import bgImage from "../assets/str.jpg";
-
 const Cart = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
