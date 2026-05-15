@@ -66,7 +66,7 @@ const AdminUpdate = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/update-product/${product._id}`,
+        `https://bloom-hair-final.onrender.com/update-product/${product._id}`,
         {
           method: "PUT",
           headers: {
