@@ -4,7 +4,6 @@ const getCartFromStorage = () => {
   if (typeof localStorage !== "undefined") {
     return JSON.parse(localStorage.getItem("cart")) || [];
   }
-
   return [];
 };
 
