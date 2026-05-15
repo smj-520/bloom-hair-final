@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import bgImage from "../assets/str.jpg";
-
 const Feedback = () => {
   const navigate = useNavigate();
   const [rating, setRating] = useState(0);
