@@ -1,0 +1,22 @@
+services:
+  server:
+    build: ./server
+    container_name: acticlub-server
+    ports:
+      - "5000:5000"
+
+    environment:
+      - MONGO_URI=mongodb://admin:admin%40123@ac-uq0pn5r-shard-00-00.00wdo3o.mongodb.net:27017,ac-uq0pn5r-shard-00-01.00wdo3o.mongodb.net:27017,ac-uq0pn5r-shard-00-02.00wdo3o.mongodb.net:27017/BloomHair?ssl=true&replicaSet=atlas-pew0e3-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0
+
+    restart: unless-stopped
+
+  client:
+    build: ./client
+    container_name: acticlub-client
+    ports:
+      - "5173:5173"
+
+    depends_on:
+      - server
+
+    restart: unless-stopped
