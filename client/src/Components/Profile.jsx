@@ -2,6 +2,7 @@ import { Container, Row, Col, Card, CardBody, Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import { FaUserCircle, FaShoppingBag, FaEnvelope, FaPhone } from "react-icons/fa";
 import "../App.css";
+
 import bgImage from "../assets/str.jpg"; // ✨ أضفنا هذا فقط
 
 const Profile = () => {
