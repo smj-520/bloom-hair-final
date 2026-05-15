@@ -24,7 +24,7 @@ const Home = () => {
     try {
       dispatch(setLoading(true));
 
-      const response = await fetch("http://localhost:5000/products");
+      const response = await fetch("https://bloom-hair-final.onrender.com/products");
       const data = await response.json();
 
       dispatch(setProducts(data));
