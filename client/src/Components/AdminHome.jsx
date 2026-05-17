@@ -1,7 +1,7 @@
 import { Container, Row, Col, Button } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { FaSignOutAlt } from "react-icons/fa"; // ✨ فقط أضفنا هذا
+import { FaSignOutAlt } from "react-icons/fa";   
 import str from "../assets/str.jpg";
 
 const AdminHome = () => {
@@ -12,7 +12,7 @@ const AdminHome = () => {
     fetchProducts();
   }, []);
 
-  const handleLogout = () => {   // ✨ فقط أضفنا هذا
+  const handleLogout = () => {   
     localStorage.removeItem("user");
     navigate("/login");
   };
