@@ -2,7 +2,7 @@ import { Button, Container, FormGroup } from "reactstrap";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-import bgImage from "../assets/str.jpg"; // ✨ أضفنا هذا فقط
+import bgImage from "../assets/str.jpg"; 
 
 const ResetPassword = () => {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ const ResetPassword = () => {
     <Container
       fluid
       className="reset-page"
-      style={{                    // ✨ هذا اللي أضفناه فقط
+      style={{                    
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
