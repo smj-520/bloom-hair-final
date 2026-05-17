@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FaUserCircle, FaShoppingBag, FaEnvelope, FaPhone } from "react-icons/fa";
 import "../App.css";
 
-import bgImage from "../assets/str.jpg"; // ✨ أضفنا هذا فقط
+import bgImage from "../assets/str.jpg"; 
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const Profile = () => {
     <Container
       fluid
       className="profile-page"
-      style={{                    // ✨ هذا اللي أضفناه فقط
+      style={{                    
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
