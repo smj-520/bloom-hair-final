@@ -1,7 +1,7 @@
 import { Button, Container } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
-import bgImage from "../assets/str.jpg"; // ✨ أضفنا هذا فقط
+import bgImage from "../assets/str.jpg"; 
 
 const PasswordSuccess = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const PasswordSuccess = () => {
     <Container
       fluid
       className="success-page-auth"
-      style={{                     // ✨ هذا اللي أضفناه فقط
+      style={{                       
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
