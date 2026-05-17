@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "../App.css";
 import bgImage from "../assets/str.jpg"; // ✨ أضفنا هذا فقط
-
 const EditProfile = () => {
   const navigate = useNavigate();
 
